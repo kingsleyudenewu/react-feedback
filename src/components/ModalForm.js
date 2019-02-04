@@ -36,8 +36,6 @@ export default class ModalForm extends Component {
 
   onSubmit(e) {
     e.preventDefault();
-    console.log(this.state.feedback);
-
     this.setState({ feedback: "" });
     swal("Notification", "Feedback Submited", "success");
   }
